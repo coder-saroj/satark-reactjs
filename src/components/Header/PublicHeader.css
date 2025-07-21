@@ -1,0 +1,35 @@
+.public-header-login-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 18px;
+  border: 1px solid #007bff;
+  border-radius: 24px;
+  color: #007bff;
+  background: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.95rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.public-header-login-btn i {
+  font-size: 1.1em;
+  transition: color 0.2s;
+  color: #007bff;
+}
+
+.public-header-login-btn:hover,
+.public-header-login-btn:focus {
+  background: #007bff;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,123,255,0.10);
+  text-decoration: none;
+}
+
+.public-header-login-btn:hover i,
+.public-header-login-btn:focus i {
+  color: #fff;
+} 

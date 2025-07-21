@@ -1,13 +1,28 @@
+:root {
+  --bs-body-font-family: 'IBM Plex Sans', sans-serif;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Remove blue outline/box from clicked Leaflet polygons */
+.leaflet-container .leaflet-interactive:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Force all Leaflet polygons to be fully opaque */
+.leaflet-interactive {
+    fill-opacity: 1 !important;
+    opacity: 1 !important;
 }
